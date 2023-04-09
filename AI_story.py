@@ -2,8 +2,8 @@ import altair as alt
 import pandas as pd
 
 # get data
-domain = pd.read_csv("./artificial-intelligence-training-computation.csv")
-research = pd.read_csv("artificial-intelligence-training-computation-by-researcher-affiliation.csv")
+domain = pd.read_csv("data/artificial-intelligence-training-computation.csv")
+research = pd.read_csv("data/artificial-intelligence-training-computation-by-researcher-affiliation.csv")
 merged = pd.concat([domain, research['Researcher_affiliation']],axis=1)
 print(merged.head())
 alt.data_transformers.disable_max_rows()  # enable altair to load data >5000 rows
@@ -24,5 +24,5 @@ chart1 = (
 ).configure_title(fontSize=20, anchor="start")
 
 chart1.show()
-#chart1.save("./chart1.html")
+#chart1.save("./output/chart1.html")
 
