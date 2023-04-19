@@ -5,7 +5,9 @@ BEFORE creating your plot, determine:
     - What data do I want to show? Can I show it in one chart, or do I need to facet it out to help manage the visual complexity of the story that I want to tell?
 
 1. Create your base plot in your tool of choice (I like to use vega-altair, but anything that will allow you to eventally save out a svg file works)
+    - First attempt to show my data, but with my current choice I'm not showing the attribute that I wanted to communicate
     ![Show the data](./redesign-figma/1-show-the-data.svg)
+    - With faceting through small multiples, I can now show the academic affiliation of these different systems in a manageable way. 
     ![Break up information, e.g., facet](./redesign-figma/2-break-up-info.svg)
 2. Export your plot as svg
 3. Create an empty Figma file 
