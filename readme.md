@@ -21,7 +21,7 @@ BEFORE creating your plot, determine:
    - Reduce/remove gridlines
    - Remove unnecessary legends 
    - Don't make your viewer tilt their head to read your chart axis labels - no diagonal text, avoid vertical
-   ![Design with grey](./redesign-figma/4-declutter.png)
+   ![Declutter](./redesign-figma/4-declutter.png)
 8. Last, but not least: think about TEXT as just as important as the visuals in your science graphic! You want to tell your reader what they should learn from your figure, don't make them sit and try to puzzle it out themselves. This entails:
     - Move legends (if you still have after decluttering) closer to the actual data to improve readability
     - Write the title of your chart like a newspaper headline that captures the key takeaways of the chart and uses concise, active language
@@ -30,6 +30,7 @@ BEFORE creating your plot, determine:
       - Callout box - in my example, I have added a caption box that explains to my audience what a FLOP is
       - Add references to your data source
       - Add annotations (labels) on top of your chart to call out important features (for some types of data, this may be considered image manipulation and not be allowed, so if you ever are unsure, discuss with colleagues)
+    ![Text + Vis = Joy](./redesign-figma/5-text+vis.png)
 9. Export your graphic out from Figma:
    - Select your Figma frame
    - At the bottom of the right-hand panel, there is an Export menu. For maximum resolution, export your graphic as svg or pdf, if possible. If it must be a raster image file, use png. 
