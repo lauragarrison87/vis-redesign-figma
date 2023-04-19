@@ -1,12 +1,13 @@
 # Visualization Redesign 
 
 BEFORE creating your plot, determine: 
-    - **What message** is important to me to communicate, to **whom**, and **why**? 
-    - What data do I want to show? Can I show it in one chart, or do I need to facet it out to help manage the visual complexity of the story that I want to tell?
+- **What message** is important to me to communicate, to **whom**, and **why**?
+- What data do I want to show? Can I show it in one chart, or do I need to facet it out to help manage the visual complexity of the story that I want to tell?
     
-    For instance, in this example, I want to share a visual about the total computation needed to train popular AI vision systems according to academic/industry affiliation, ultimately to a lay audience. I want to show how industry may have lagged at first, but has since surpassed academic efforts in computational power. 
+For instance, in this example, I want to share a visual about the total computation needed to train popular AI vision systems according to academic/industry affiliation, ultimately to a lay audience. I want to show how industry may have lagged at first, but has since surpassed academic efforts in computational power. 
 
-1. Create your base plot in your tool of choice (I like to use vega-altair, but anything that will allow you to eventally save out a svg file works)
+Below are some basic steps to consider for jazzing up your visualization into a detailed science graphic that communicates a message, using Figma. Note, these steps can also be applied directly in code as well, but it can take longer, and for me, I have found that I like the visual interface to quickly and easily prototype my visuals. 
+1. Create your base plot in your tool of choice (I like to use vega-altair, but anything that will allow you to eventually save out a svg file works)
     - First attempt to show my data 
     - On the y-axis, I’m showing the total computation in petaFLOP, with no real information on what that means, which is a problem for my target audience. 
     - On the x-axis, I’m showing publication date by year of the system, and using color to map each system to its domain, shown in this legend at the top right. U
@@ -43,4 +44,7 @@ BEFORE creating your plot, determine:
     ![Text + Vis = Joy](./redesign-figma/5-text+vis.svg)
 9. Export your graphic out from Figma:
    - Select your Figma frame
-   - At the bottom of the right-hand panel, there is an Export menu. For maximum resolution, export your graphic as svg or pdf, if possible. If it must be a raster image file, use png. 
+   - At the bottom of the right-hand panel, there is an Export menu. 
+   ![Figma Export](./redesign-figma/export-menu.png)
+   - For maximum resolution, export your graphic as svg or pdf, if possible. If it must be a raster image file, use png. 
+   
