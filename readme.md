@@ -3,11 +3,19 @@
 BEFORE creating your plot, determine: 
     - **What message** is important to me to communicate, to **whom**, and **why**? 
     - What data do I want to show? Can I show it in one chart, or do I need to facet it out to help manage the visual complexity of the story that I want to tell?
+    
+    For instance, in this example, I want to share a visual about the total computation needed to train popular AI vision systems according to academic/industry affiliation, ultimately to a lay audience. I want to show how industry may have lagged at first, but has since surpassed academic efforts in computational power. 
 
 1. Create your base plot in your tool of choice (I like to use vega-altair, but anything that will allow you to eventally save out a svg file works)
-    - First attempt to show my data, but with my current choice I'm not showing the attribute that I wanted to communicate
+    - First attempt to show my data 
+    - On the y-axis, I’m showing the total computation in petaFLOP, with no real information on what that means, which is a problem for my target audience. 
+    - On the x-axis, I’m showing publication date by year of the system, and using color to map each system to its domain, shown in this legend at the top right. U
+    - With my current visualization choice I'm not showing the attribute that I wanted to communicate (academic/industry affiliation), and the vision domain is hard to appreciate here. 
     ![Show the data](./redesign-figma/1-show-the-data.svg)
-    - With faceting through small multiples, I can now show the academic affiliation of these different systems in a manageable way. 
+    - With faceting through small multiples, I can now show the academic affiliation of these different systems in a manageable way. The advantage of small multiples is that since each is essentially different versions of the same chart, once you can read one, you can read them all, making it easier to compare and find patterns (if that is a goal of the visualization)
+
+    So now I’ve broken out the information I want to see, but it’s still hard to see what I’m getting at 
+
     ![Break up information, e.g., facet](./redesign-figma/2-break-up-info.svg)
 2. Export your plot as svg
 3. Create an empty Figma file 
